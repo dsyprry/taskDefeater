@@ -1,0 +1,52 @@
+body {
+	background-color: #2cb4fe;
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
+#heading {
+	text-align: center;
+}
+
+#directions {
+	text-align: center;
+	margin-left: 400px;
+	margin-right: 400px;
+}
+
+#tasks {
+	text-align: left;
+	margin-left: 150px;
+}
+
+#taskList {
+	margin-top: 50px;
+}
+
+#baddies {
+	margin-top: 10%;
+	text-align: center;
+}
+
+button#baddie {
+	background-color: #2cb4fe;
+	border-style: none;
+
+}
+
+#baddiePic {
+	height: 300px;
+	width: 300px;
+}
+
+#victories {
+	text-align: right;
+	margin-right: 150px;
+	margin-top: -18%;
+
+}
+
+#octocat {
+	padding-top: 200px;
+	width: 150px;
+	height: 150px;
+}

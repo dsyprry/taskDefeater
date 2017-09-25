@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TASK DEFEATER</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="TaskDefeater.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="TaskDefeater.js"></script>
+	 -->
+</head>
+<body>
+	
+	<h1 id="heading">DEFEAT THE TASK</h1>
+
+		
+			<p id="directions">ADD A TASK TO BE DEFEATED. <br>
+			ONCE YOU ANNIHILATE THIS TASK, CLICK THE BADDIE TO ADD IT TO YOU LIST OF VICTORIES.</p>
+
+
+
+	<div id="baddies">
+
+		<h2 id="currentTask">DEFEAT<br><br> </h2>
+
+			<img id="baddiePic" src="img/baddie.png">
+
+	</div>
+
+	
+	<div id="tasks"> 
+	
+		<h2>ADD A NEW TASK</h2>
+
+		<input type="textbox" name="task" id="taskName">	
+		<button id="addTaskBtn">ADD TASK</button>
+
+			<div id="taskList">CHOOSE WHICH TASK TO DEFEAT<br><br>
+
+				<div id="taskSlots">
+					<ul id="tasks">
+						
+					</ul>
+				</div>
+
+			</div>
+
+
+
+	</div>
+
+
+	<div id="victories">
+
+		<h2>VICTORIES</h2>
+
+		<div id="victoryList"></div>
+
+	</div>
+
+
+	<div id="social">	
+			<center>
+			<a href="https://github.com/dsyprry">
+				<img src="img/octocat.png" id="octocat" alt="Github">
+			</a>
+			</center>
+		</div>
+
+
+
+<script type="text/javascript">
+	
+
+	$("#addTaskBtn").on("click", function(){
+
+		var task = $("#taskName").val().toString();
+
+		// var taskList = [];
+
+		// taskList += task;
+
+		// var htmlList = [];
+
+		// for (var i=0; i < taskList.length; i++) {
+		// 	  htmlList += "<li>" + taskList[i] + "</li>";
+		// 	}
+
+		// 	$("#tasks").append(htmlList);
+
+
+		// $("#taskList").append(task + "\n");
+
+		$("#taskList").append(task);
+		
+	});
+
+
+
+
+
+	$("#baddiePic").on("click", function() {
+
+		alert("baddie clicked");			        	      	
+	});//end click the baddie, make a victory
+
+</script>
+
+</body>
+</html>
